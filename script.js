@@ -63,25 +63,21 @@ function playRound(humanChoice, computerChoice) {
     console.log(`Current score: computer ${computerScore}, player:${humanScore}`);
 }
 
-function playGame(numberOfRounds) {
 
-    for (let i=0;i<numberOfRounds;i++){
-        console.log(`Round number ${i+1}:`);
-        playRound(getHumanChoice(), getComputerChoice());
-    }
 
-    if (humanScore>computerScore){
-        console.log(`You win! Final score: human ${humanScore} computer ${computerScore}`)
-    } else if (computerScore>humanScore){
-        console.log(`You lose! Final score: human ${humanScore} computer ${computerScore}`)
-    } else if(computerScore==humanScore){
-        console.log(`Tie! Final score: human ${humanScore} computer ${computerScore}`)
-    }
-}
+// function playGame(numberOfRounds) {
 
-playGame(5);
+//     for (let i=0;i<numberOfRounds;i++){
+//         console.log(`Round number ${i+1}:`);
+//         playRound(getHumanChoice(), getComputerChoice());
+//     }
 
-// let humanSelection=getHumanChoice();
-// let computerSelection=getComputerChoice();
+//     if (humanScore>computerScore){
+//         console.log(`You win! Final score: human ${humanScore} computer ${computerScore}`)
+//     } else if (computerScore>humanScore){
+//         console.log(`You lose! Final score: human ${humanScore} computer ${computerScore}`)
+//     } else if(computerScore==humanScore){
+//         console.log(`Tie! Final score: human ${humanScore} computer ${computerScore}`)
+//     }
+// }
 
-// playRound(humanSelection, computerSelection);

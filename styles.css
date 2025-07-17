@@ -15,11 +15,11 @@
 .choice-prompt {
     display:flex;
     flex-direction:column;
-    justify-content:space-between;
+    justify-content:flex-start;    
     width:75%;
     padding:5%;
     border:1px solid red;
-    background-color:hsl(238, 75%, 77%);
+    background-color:hsl(237, 90%, 85%);
     margin:1%;
 }
 
@@ -51,6 +51,8 @@
 button {
     flex:0.1;
     align-self:stretch;
+    font-size:75%;
+    
     /* width: 25%; */
     /* height: 25%; */
 }

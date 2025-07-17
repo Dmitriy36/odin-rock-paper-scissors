@@ -65,6 +65,34 @@ function playRound(humanChoice, computerChoice) {
 
 
 
+
+
+const btnRock = document.querySelector("#btn-rock");
+btnRock.addEventListener("click", rockButtonClicked);
+
+const btnPaper = document.querySelector("#btn-paper");
+btnPaper.addEventListener("click", paperButtonClicked);
+
+const btnScissors = document.querySelector("#btn-scissors");
+btnScissors.addEventListener("click", scissorsButtonClicked);
+
+const resultsPane = document.querySelector(".results-panel");
+const testCheck = document.createElement("p");
+testCheck.textContent="LUULZ!";
+resultsPane.append(testCheck);
+
+function rockButtonClicked(){
+    alert("rock button was clicked! LOL!");
+}
+
+function paperButtonClicked(){
+    alert("paper button was clicked! LOL!");
+}
+
+function scissorsButtonClicked(){
+    alert("scissors button was clicked! LOL!");
+}
+
 // function playGame(numberOfRounds) {
 
 //     for (let i=0;i<numberOfRounds;i++){
